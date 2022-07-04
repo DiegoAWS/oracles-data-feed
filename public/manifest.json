@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Oracles Data Feed",
+  "name": "Oracles Data Feed using WebSocket Technologies",
   "icons": [
     {
       "src": "favicon.ico",
