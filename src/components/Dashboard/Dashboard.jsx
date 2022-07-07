@@ -8,12 +8,11 @@ import './Dashboard.scss'
 function Dashboard() {
     return (
         <div className='dashboardWrapper'>
-          
+
             <FuturisticSpinner />
             <ChartBasic />
-            <BasicTable />
-           
             <ChartArea />
+            <BasicTable />
         </div>
     )
 }
