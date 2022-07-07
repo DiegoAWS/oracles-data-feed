@@ -1,0 +1,8 @@
+.dashboardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &>div{
+        margin: 10px;
+    }
+}
