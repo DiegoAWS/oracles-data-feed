@@ -1,7 +1,7 @@
 import axios from "axios";
 import hmacSHA256 from 'crypto-js/hmac-sha256';
-const apiKey = process.env.REACT_APP_CEX_API_KEY;
-const apiSecret = process.env.REACT_APP_CEX_API_SECRET;
+const apiKey = ''//process.env.REACT_APP_CEX_API_KEY;
+const apiSecret = ''//process.env.REACT_APP_CEX_API_SECRET;
 
 function createSignature(timestamp, apiKey, apiSecret) {
 
