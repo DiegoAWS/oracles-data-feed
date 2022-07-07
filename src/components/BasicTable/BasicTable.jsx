@@ -5,7 +5,7 @@ import './BasicTable.scss'
 function BasicTable() {
     const { dataSet } = useMainContext()
 
-    const tailDataSet = dataSet.slice(-10)
+    const tailDataSet = dataSet.slice(-14)
 
     return (
         <div className='basicTableWrapper'>

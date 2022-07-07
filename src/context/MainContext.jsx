@@ -71,8 +71,10 @@ function MainContextProvider({ ...props }) {
                         const amountQuoteStr = Number(item?.amountQuoteStr)
                         const amountStr = Number(item?.amountStr)
                         const price = Number(item?.priceStr)
-                        console.log(item)
+                        const orderSide = item?.orderSide
+                       
                         pushResultToDataSet({
+                            orderSide,
                             currencyPairId,
                             amountQuoteStr,
                             amountStr,

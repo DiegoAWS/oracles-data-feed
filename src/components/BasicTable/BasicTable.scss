@@ -6,6 +6,9 @@
     font-size: 0.8rem;
     color: white;
 
+    .basicTableHeader{
+        background-color: blueviolet;
+    }
     .basicTableRow {
         height: 1rem;
         display: flex;
@@ -16,7 +19,7 @@
        
 
         .basicTableCell {
-            background-color: red;
+            background-color: blueviolet;
             white-space: nowrap;
            
             text-align: center;
