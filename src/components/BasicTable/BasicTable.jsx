@@ -8,7 +8,24 @@ function BasicTable() {
     const tailDataSet = dataSet.slice(-10)
 
     return (
-        <div className='basicTableWrapper'>BasicTable</div>
+        <div className='basicTableWrapper'>
+              <div  className='basicTableRow basicTableHeader'>
+                        <div className='basicTableCell'>PRICE</div>
+                        <div className='basicTableCell'>QUOTE</div>
+                        <div className='basicTableCell'>AMOUNT</div>
+
+                    </div>
+            {
+                tailDataSet.map((item, index) => (
+                    <div key={index} className='basicTableRow'>
+                        <div className='basicTableCell'>{item?.price?.toFixed(2)}</div>
+                        <div className='basicTableCell'>{item?.amountQuoteStr?.toFixed(2)}</div>
+                        <div className='basicTableCell'>{item?.amountStr?.toFixed(2)}</div>
+
+                    </div>
+                ))
+            }
+        </div>
     )
 }
 

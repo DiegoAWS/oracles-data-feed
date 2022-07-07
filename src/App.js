@@ -1,7 +1,6 @@
 
 import './App.scss';
-import BasicTable from './components/BasicTable/BasicTable';
-import ChartBasic from './components/ChartBasic/ChartBasic';
+import Dashboard from './components/Dashboard/Dashboard';
 import { useMainContext } from './context/MainContext';
 
 function App() {
@@ -14,8 +13,7 @@ function App() {
 
 
 
-      <ChartBasic />
-      <BasicTable />
+      <Dashboard />
     </div>
   );
 }
