@@ -1,5 +1,5 @@
 .basicTableWrapper {
-    width: 300px;
+    width: 480px;
     border: 1px solid white;
     border-radius: 20px;
     padding: 10px;
@@ -16,7 +16,9 @@
         border-bottom: 1px solid #ccc;
         padding: 2px;
 
-       
+        &.BUYSIDE .basicTableCell {
+            background-color: #235469;
+        }
 
         .basicTableCell {
             background-color: blueviolet;

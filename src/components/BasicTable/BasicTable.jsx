@@ -17,7 +17,7 @@ function BasicTable() {
                     </div>
             {
                 tailDataSet.map((item, index) => (
-                    <div key={index} className='basicTableRow'>
+                    <div key={index} className={`basicTableRow ${item?.orderSide==="BUYSIDE"?"BUYSIDE":""}`} >
                         <div className='basicTableCell'>{item?.price?.toFixed(2)}</div>
                         <div className='basicTableCell'>{item?.amountQuoteStr?.toFixed(2)}</div>
                         <div className='basicTableCell'>{item?.amountStr?.toFixed(2)}</div>

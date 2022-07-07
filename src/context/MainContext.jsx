@@ -41,7 +41,7 @@ function MainContextProvider({ ...props }) {
 
     const pushResultToDataSet = (newValue) => {
 
-        setDataSet(oldDataSet => oldDataSet.slice(1).concat( newValue ))
+        setDataSet(oldDataSet => oldDataSet.slice(1).concat(newValue))
     }
 
 
@@ -60,7 +60,7 @@ function MainContextProvider({ ...props }) {
             fr.onload = (e) => {
                 const rawData = JSON.parse(e.target.result)
 
-               
+
                 const currencyPairId = rawData?.marketUpdate?.market?.currencyPairId
                 const trades = rawData?.marketUpdate?.tradesUpdate?.trades || []
                 trades.forEach(item => {
@@ -72,7 +72,7 @@ function MainContextProvider({ ...props }) {
                         const amountStr = Number(item?.amountStr)
                         const price = Number(item?.priceStr)
                         const orderSide = item?.orderSide
-                       
+                        //    console.table(item)
                         pushResultToDataSet({
                             orderSide,
                             currencyPairId,
