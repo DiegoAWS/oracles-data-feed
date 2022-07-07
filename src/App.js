@@ -1,10 +1,11 @@
 
 import './App.scss';
-import ChartBasic from './components/ChartBasic';
+import BasicTable from './components/BasicTable/BasicTable';
+import ChartBasic from './components/ChartBasic/ChartBasic';
 import { useMainContext } from './context/MainContext';
 
 function App() {
-  const {  turnOffSuscription } = useMainContext()
+  const { turnOffSuscription } = useMainContext()
   return (
     <div className="App">
 
@@ -14,6 +15,7 @@ function App() {
 
 
       <ChartBasic />
+      <BasicTable />
     </div>
   );
 }

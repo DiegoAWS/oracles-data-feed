@@ -30,17 +30,18 @@ const waitForConnection = function (callback, interval = 200) {
     }
 };
 
-const emptyDataSet = (new Array(50)).fill({ price: null })
+const emptyDataSet = (new Array(20)).fill({ price: null })
 
 function MainContextProvider({ ...props }) {
 
     const [dataSet, setDataSet] = useState(emptyDataSet)
 
-    const lastTimeStamp = useRef(0);
+    const lastTimeStamp = useRef({});
 
 
     const pushResultToDataSet = (newValue) => {
-        setDataSet(oldDataSet => oldDataSet.slice(1).concat({ price: newValue }))
+
+        setDataSet(oldDataSet => oldDataSet.slice(1).concat( newValue ))
     }
 
 
@@ -59,14 +60,26 @@ function MainContextProvider({ ...props }) {
             fr.onload = (e) => {
                 const rawData = JSON.parse(e.target.result)
 
+               
+                const currencyPairId = rawData?.marketUpdate?.market?.currencyPairId
                 const trades = rawData?.marketUpdate?.tradesUpdate?.trades || []
                 trades.forEach(item => {
 
 
-                    if (lastTimeStamp.current !== item?.timestamp) {
-                        pushResultToDataSet(Number(item?.priceStr))
+                    if (lastTimeStamp.current[currencyPairId] !== item?.timestamp) {
 
-                        lastTimeStamp.current = item.timestamp;
+                        const amountQuoteStr = Number(item?.amountQuoteStr)
+                        const amountStr = Number(item?.amountStr)
+                        const price = Number(item?.priceStr)
+                        console.log(item)
+                        pushResultToDataSet({
+                            currencyPairId,
+                            amountQuoteStr,
+                            amountStr,
+                            price
+                        })
+
+                        lastTimeStamp.current[currencyPairId] = item.timestamp;
                     }
                 })
 
