@@ -1,17 +1,18 @@
 
 import './App.scss';
 import Dashboard from './components/Dashboard/Dashboard';
+import ExchangeSelector from './components/ExchangeSelector/ExchangeSelector';
 import { useMainContext } from './context/MainContext';
 
 function App() {
-  const { turnOffSuscription } = useMainContext()
+  const { closeConnection } = useMainContext()
   return (
     <div className="App">
 
 
-      <button style={{display:'none'}} onClick={() => turnOffSuscription()}> STOP FEED</button>
+      <button style={{ display: 'flex' }} onClick={() => closeConnection()}> STOP FEED</button>
 
-
+      <ExchangeSelector />
 
       <Dashboard />
     </div>

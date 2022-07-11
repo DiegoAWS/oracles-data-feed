@@ -1,114 +1,35 @@
-import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
-import { suscribeTic, unsubscribeTic } from '../services/wsGetTicService';
+import React, { createContext, useCallback, useContext, useState } from 'react';
 
 
+import exchangeList from '../data/exchanges_actives.json'
+import useExchangeSuscription from '../hooks/useExchangeSuscription';
+import useGetPrices from '../hooks/useGetPrices';
 
 const MainContext = createContext();
-const apiKey = process.env.REACT_APP_CRYPTOWATCH_PUBLIC_KEY;
 
-const wsClient = new WebSocket(`wss://stream.cryptowat.ch/connect?apikey=${apiKey}`);
-
-const PAIR_DEFAULT = 125; // ETC <-> USD
-
-const sendWS = function (message, callback) {
-    waitForConnection(function () {
-        wsClient.send(message);
-        if (typeof callback !== 'undefined') {
-            callback();
-        }
-    });
-};
-
-const waitForConnection = function (callback, interval = 200) {
-    if (wsClient.readyState === 1) {
-        callback();
-    } else {
-
-        setTimeout(function () {
-            waitForConnection(callback, interval);
-        }, interval);
-    }
-};
-
-const emptyDataSet = (new Array(20)).fill({ price: null })
 
 function MainContextProvider({ ...props }) {
 
-    const [dataSet, setDataSet] = useState(emptyDataSet)
+    const [exchange, setExchange] = useState(exchangeList[0])
 
-    const lastTimeStamp = useRef({});
+    useGetPrices(exchange)
 
+    const processFeed = useCallback((data) => {
 
-    const pushResultToDataSet = (newValue) => {
+        console.log(data)
 
-        setDataSet(oldDataSet => oldDataSet.slice(1).concat(newValue))
-    }
-
-
-    useEffect(() => {
-
-        wsClient.onopen = () => {
-            console.log('WebSocket Client Connected')
-
-            sendWS(suscribeTic(PAIR_DEFAULT));
-        }
+    }, [])
 
 
-        wsClient.onmessage = (message) => {
-            const fr = new FileReader();
-
-            fr.onload = (e) => {
-                const rawData = JSON.parse(e.target.result)
-
-
-                const currencyPairId = rawData?.marketUpdate?.market?.currencyPairId
-                const trades = rawData?.marketUpdate?.tradesUpdate?.trades || []
-                trades.forEach(item => {
-
-
-                    if (lastTimeStamp.current[currencyPairId] !== item?.timestamp) {
-
-                        const amountQuoteStr = Number(item?.amountQuoteStr)
-                        const amountStr = Number(item?.amountStr)
-                        const price = Number(item?.priceStr)
-                        const orderSide = item?.orderSide
-                        //    console.table(item)
-                        pushResultToDataSet({
-                            orderSide,
-                            currencyPairId,
-                            amountQuoteStr,
-                            amountStr,
-                            price
-                        })
-
-                        lastTimeStamp.current[currencyPairId] = item.timestamp;
-                    }
-                })
-
-            };
-
-            fr.readAsText(message.data);
-        }
-
-
-        return (() => {
-            if (wsClient.readyState === 1)
-                turnOffSuscription()
-        })
-
-    }, []);
-
-
-    const turnOffSuscription = () => {
-        console.log("Disconnecting")
-        wsClient.send(unsubscribeTic(PAIR_DEFAULT));
-    }
+    const { closeConnection } = { closeConnection: () => { } }//useExchangeSuscription(exchange, processFeed)
 
     return (
         <MainContext.Provider
             value={{
-                dataSet,
-                turnOffSuscription,
+                exchangeList,
+                exchange,
+                setExchange,
+                closeConnection,
             }}
             {...props}
         />

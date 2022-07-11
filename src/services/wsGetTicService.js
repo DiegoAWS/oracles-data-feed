@@ -1,25 +1,20 @@
 
-export const suscribeTic = (pair) => JSON.stringify({
-    "subscribe": {
-        "subscriptions": [
-            {
-                "streamSubscription": {
-                    "resource": `pairs:${pair}:trades`
-                }
-            },
-        ]
-    }
+
+
+const getSuscriptionText = (exchangeId) => ({
+    subscriptions: [
+        {
+            streamSubscription: {
+                resource: `exchanges:${exchangeId}:trades`
+            }
+        }]
+
 })
 
-export const unsubscribeTic = (pair) => JSON.stringify({
-    "unsubscribe": {
-        "subscriptions": [
-            {
-                "streamSubscription": {
-                    "resource": `pairs:${pair}:trades`
-                }
-            }
+export const suscribeTic = (exchangeId) => JSON.stringify({
+    subscribe: getSuscriptionText(exchangeId)
+})
 
-        ]
-    }
+export const unsubscribeTic = (exchangeId) => JSON.stringify({
+    unsubscribe: getSuscriptionText(exchangeId)
 })
