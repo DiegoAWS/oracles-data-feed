@@ -5,7 +5,7 @@ import ExchangeSelector from './components/ExchangeSelector/ExchangeSelector';
 import { useMainContext } from './context/MainContext';
 
 function App() {
-  const { closeConnection } = useMainContext()
+  const { closeConnection } = useMainContext() 
   return (
     <div className="App">
 

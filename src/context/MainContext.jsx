@@ -11,23 +11,48 @@ const MainContext = createContext();
 function MainContextProvider({ ...props }) {
 
     const [exchange, setExchange] = useState(exchangeList[0])
+    const [prices, setPrices] = useState({})
 
-    useGetPrices(exchange)
-
-    const processFeed = useCallback((data) => {
-
-        console.log(data)
-
+    const obtainPrices = useCallback((data) => {
+        setPrices(data)
     }, [])
 
 
-    const { closeConnection } = { closeConnection: () => { } }//useExchangeSuscription(exchange, processFeed)
+    useGetPrices(exchange, obtainPrices)
+
+
+    const processFeed = useCallback((data) => {
+
+        if (prices.hasOwnProperty(data?.currencyPair)) {
+
+            console.log({ data })
+
+            setPrices((old) => ({
+                ...old,
+                [data?.currencyPair]: {
+                    ...old[data?.currencyPair],
+                    price: data?.price,
+                }
+            }))
+
+        }
+
+
+
+
+    }, [prices])
+
+    const { closeConnection } = useExchangeSuscription(exchange, processFeed)
+    // const { closeConnection } ={closeConnection:()=>{}}
+
+    // console.log({ prices })
 
     return (
         <MainContext.Provider
             value={{
                 exchangeList,
                 exchange,
+                prices,
                 setExchange,
                 closeConnection,
             }}

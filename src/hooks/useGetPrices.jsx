@@ -1,18 +1,18 @@
 import { useEffect } from "react"
-import { getRestPrices } from "../services/getRestPrices"
+import { getRestPricesOneMarket } from "../services/getRestPrices"
 
+function useGetPrices(exchange, obtainPrices) {
 
-function useGetPrices(exchange) {
-
-    console.log({ exchange })
-    
     useEffect(() => {
-        (async () => {
-            const prices = await getRestPrices()
-            console.log({prices})
-        })();
+        if (exchange.symbol) {
+            (async () => {
+                const response = await getRestPricesOneMarket(exchange.symbol)
+                const prices = response.data;
+                obtainPrices(prices)
+            })();
+        }
 
-    }, [])
+    }, [exchange, obtainPrices])
     return null
 }
 
