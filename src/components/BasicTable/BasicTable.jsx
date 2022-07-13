@@ -15,7 +15,7 @@ function BasicTable() {
 
     return (
         <div className='basicTableWrapper'>
-            <table className=''>
+            {tailDataSet.length > 0 && <table className=''>
                 <thead>
                     <tr>
                         <th>Currency</th>
@@ -36,7 +36,7 @@ function BasicTable() {
                         </tr>
                     ))}
                 </tbody>
-            </table>
+            </table>}
         </div>
     )
 }
