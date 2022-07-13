@@ -1,3 +1,4 @@
+import { CircularProgress } from '@mui/material'
 import React from 'react'
 import { getPricesArray } from '../../adapters/processPrices'
 import { useMainContext } from '../../context/MainContext'
@@ -15,7 +16,9 @@ function BasicTable() {
 
     return (
         <div className='basicTableWrapper'>
-            {tailDataSet.length > 0 && <table className=''>
+            {tailDataSet.length ===0?
+            <CircularProgress />
+            :<table className=''>
                 <thead>
                     <tr>
                         <th>Currency</th>
