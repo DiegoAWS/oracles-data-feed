@@ -20,9 +20,9 @@ function BasicTable() {
                     <tr>
                         <th>Currency</th>
                         <th>Symbol</th>
-                        <th>USD</th>
                         <th>USDT</th>
                         <th>ETH</th>
+                        <th>USD</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,9 +30,9 @@ function BasicTable() {
                         <tr key={i}>
                             <td>{element[0]?.baseName}</td>
                             <td>{element[0]?.base}</td>
-                            <td>{getColumn(element, "usd")}</td>
                             <td>{getColumn(element, "usdt")}</td>
                             <td>{getColumn(element, "eth")}</td>
+                            <td>{getColumn(element, "usd")}</td>
                         </tr>
                     ))}
                 </tbody>
