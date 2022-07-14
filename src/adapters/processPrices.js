@@ -1,4 +1,4 @@
-import { groupBy } from "lodash";
+import { groupBy, sortBy } from "lodash";
 
 export const getPricesArray = (prices) => {
     const arrayOfPrices = Object.entries(prices);
@@ -10,8 +10,9 @@ export const getPricesArray = (prices) => {
         })
     })
 
-    
     const groupedArray = Object.values(groupBy(arrayOfPricesArray, "base"));
 
-    return groupedArray;
+    const sortedData = sortBy(groupedArray,["0.baseName"])
+
+    return sortedData;
 }
