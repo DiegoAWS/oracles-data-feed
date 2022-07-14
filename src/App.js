@@ -5,16 +5,19 @@ import ExchangeSelector from './components/ExchangeSelector/ExchangeSelector';
 import { useMainContext } from './context/MainContext';
 
 function App() {
-  const { closeConnection } = useMainContext() 
+  const { closeConnection } = useMainContext()
   return (
     <div className="App">
 
+      <div className='headerSection'>
+        <button className='stopFeedButton' onClick={() => closeConnection()}> STOP FEED</button>
 
-      <button style={{ display: 'flex' }} onClick={() => closeConnection()}> STOP FEED</button>
+        <ExchangeSelector />
+      </div>
 
-      <ExchangeSelector />
-
-      <Dashboard />
+      <div className='bodySection'>
+        <Dashboard />
+      </div>
     </div>
   );
 }
