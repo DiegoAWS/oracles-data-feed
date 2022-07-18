@@ -12,11 +12,11 @@ export const getPricesArray = (prices) => {
 
     const groupedArray = Object.values(groupBy(arrayOfPricesArray, "base"));
 
-    const sortedData = sortBy(groupedArray,["0.baseName"])
+    const sortedData = sortBy(groupedArray, ["0.baseName"])
 
     return sortedData;
 }
 
 export const getPricesList = (prices) => {
-    return uniqBy(Object.values(prices).filter(item=>item.quote === "usd"), "base");
+    return sortBy(uniqBy(Object.values(prices).filter(item => item.quote === "usd" && item.price), "base"), ["base"]);
 }

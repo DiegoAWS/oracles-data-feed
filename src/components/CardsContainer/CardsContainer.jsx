@@ -10,8 +10,7 @@ import TabsSector from '../TabsSector/TabsSector'
 function CardsContainer() {
     const { prices } = useMainContext()
     const list = getPricesList(prices)
-
-    console.log({ list })
+    
     return (
         <div className='cardsContainerWrapper'>
             <div className="cardsTitle">
