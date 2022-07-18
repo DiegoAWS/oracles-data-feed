@@ -2,15 +2,15 @@
 import './App.scss';
 import Dashboard from './components/Dashboard/Dashboard';
 import ExchangeSelector from './components/ExchangeSelector/ExchangeSelector';
-import { useMainContext } from './context/MainContext';
+// import { useMainContext } from './context/MainContext';
 
 function App() {
-  const { closeConnection } = useMainContext()
+  // const { closeConnection } = useMainContext()
   return (
     <div className="App">
 
       <div className='headerSection'>
-        <button className='stopFeedButton' onClick={() => closeConnection()}> STOP FEED</button>
+        {/* <button className='stopFeedButton' onClick={() => closeConnection()}> STOP FEED</button> */}
 
         <ExchangeSelector />
       </div>

@@ -11,10 +11,9 @@ const getColumn = (element, target) => {
 function BasicTable() {
     const { prices } = useMainContext()
 
-
     const tailDataSet = getPricesArray(prices)
 
-
+    console.log({ prices })
     return (
         <div className='basicTableWrapper'>
             {tailDataSet.length === 0 ?

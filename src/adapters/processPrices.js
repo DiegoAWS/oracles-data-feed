@@ -1,4 +1,4 @@
-import { groupBy, sortBy } from "lodash";
+import { groupBy, sortBy, uniqBy } from "lodash";
 
 export const getPricesArray = (prices) => {
     const arrayOfPrices = Object.entries(prices);
@@ -15,4 +15,8 @@ export const getPricesArray = (prices) => {
     const sortedData = sortBy(groupedArray,["0.baseName"])
 
     return sortedData;
+}
+
+export const getPricesList = (prices) => {
+    return uniqBy(Object.values(prices).filter(item=>item.quote === "usd"), "base");
 }

@@ -2,7 +2,7 @@
   text-align: center;
 
   .headerSection{
-    height: 100px;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     padding: 10px;
+    z-index: 10;
 
     .stopFeedButton{
       display: flex;
@@ -27,7 +28,7 @@
   }
 
   .bodySection{
-    margin-top: 150px;
+    margin-top: 60px;
   }
 }
 

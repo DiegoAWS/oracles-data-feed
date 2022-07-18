@@ -1,0 +1,55 @@
+.cardsContainerWrapper {
+    max-width: 900px;
+    margin: 10px auto;
+    width: 100%;
+
+    .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .centerProgress{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 100%;
+            background-color: #f5f5f5;
+            opacity: 0.5;
+        }
+
+    }
+    .tabsContainer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .cardsTitle {
+        margin: 20px;
+        color: red;
+        text-align: center;
+        font-family: "IBM Plex Sans 700", Roboto, "Helvetica Neue", Arial;
+        font-weight: 700;
+        font-size: 2.875rem;
+        line-height: 1.25;
+        text-shadow: 1px 1px 1px rgb(255 255 255 / 1%);
+        background: linear-gradient(to bottom right, #00709b, #b35161);
+        background-size: 100% 100%;
+        background-position: top left;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-transition: 50ms linear;
+        -o-transition: 50ms linear;
+        -ms-transition: all 5s linear;
+        transition: 50ms linear;
+    }
+
+    .cardsSubtitle {
+        margin: 20px;
+        color: gray;
+    }
+}

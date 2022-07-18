@@ -1,6 +1,6 @@
 import React, { createContext, useCallback, useContext, useState } from 'react';
 import exchangeList from '../data/exchanges_actives.json'
-import useExchangeSuscription from '../hooks/useExchangeSuscription';
+// import useExchangeSuscription from '../hooks/useExchangeSuscription';
 import useGetPrices from '../hooks/useGetPrices';
 
 const MainContext = createContext();
@@ -18,24 +18,24 @@ function MainContextProvider({ ...props }) {
     useGetPrices(exchange, obtainPrices)
 
 
-    const processFeed = useCallback((data) => {
+    // const processFeed = useCallback((data) => {
 
-        if (prices.hasOwnProperty(data?.currencyPair)) {
+    //     if (prices.hasOwnProperty(data?.currencyPair)) {
 
-            setPrices((old) => ({
-                ...old,
-                [data?.currencyPair]: {
-                    ...old[data?.currencyPair],
-                    price: data?.price,
-                }
-            }))
+    //         setPrices((old) => ({
+    //             ...old,
+    //             [data?.currencyPair]: {
+    //                 ...old[data?.currencyPair],
+    //                 price: data?.price,
+    //             }
+    //         }))
 
-        }
+    //     }
 
-    }, [prices])
+    // }, [prices])
 
-    const { closeConnection } = useExchangeSuscription(exchange, processFeed)
-    // const { closeConnection } ={closeConnection:()=>{}}
+    // const { closeConnection } = useExchangeSuscription(exchange, processFeed)
+    const { closeConnection } ={closeConnection:()=>{}}
 
     return (
         <MainContext.Provider
