@@ -1,16 +1,12 @@
-.chartBasicWrapper {
+.barChartsWrapper {
     border: 1px solid #eaeff5;
     padding: 1rem;
     text-align: justify;
     border-radius: 12px;
     margin: 1rem;
 
-    .boldSubtitle{
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-
     .recharts-cartesian-axis-tick-line {
         display: none;
     }
+
 }
