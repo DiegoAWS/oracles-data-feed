@@ -1,27 +1,30 @@
+
 import React from 'react'
-import { Label, Line, LineChart, YAxis } from 'recharts'
-import { useMainContext } from '../../context/MainContext'
+import { CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts'
+import data from '../../data/data.json'
 import './ChartBasic.scss'
 
 function ChartBasic() {
-    const { dataSet } = useMainContext()
-
-    const currentValue = dataSet.slice(-1)[0].price?.toFixed(2)
 
     return (
-        <div className='chartBasicWrapper'>
-            <LineChart width={500} height={300} data={dataSet}>
 
-                <YAxis yAxisId="left" dataKey="price" domain={['dataMin - 3', 'dataMax + 3']} />
+        <LineChart
+            className='chart'
+            layout="horizontal"
+            width={400}
+            height={300}
+            data={data}
+            margin={0}
+        >
+            <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            <YAxis axisLine={false} type="number" />
+            <XAxis dataKey="month" type="category" />
+            <Legend verticalAlign="top" height={36} />
+            <Tooltip />
+            <Line name="V1 Request" dataKey="uv" stroke="#a4a6ec" />
+            <Line name="V2 Request" dataKey="pv" stroke="#c981aa" />
+        </LineChart>
 
-                <YAxis yAxisId="right" orientation="right"  >
-                    <Label value={currentValue} position="insideRight" stroke="red" />
-                </YAxis>
-                <Line yAxisId="left" type="monotone" dataKey="price" stroke="#8884d8" dot={false} isAnimationActive={false}/>
-
-            </LineChart>
-
-        </div>
     )
 }
 

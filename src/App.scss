@@ -3,6 +3,7 @@
 
   .headerSection{
     height: 60px;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +13,7 @@
     align-items: center;
     padding: 10px;
     z-index: 10;
-
+    display: none;
     .stopFeedButton{
       display: flex;
       background-color: white;
@@ -28,7 +29,7 @@
   }
 
   .bodySection{
-    margin-top: 60px;
+    // margin-top: 60px;
   }
 }
 
