@@ -1,5 +1,6 @@
 import React from 'react'
 import BarCharts from '../BarCharts/BarCharts'
+import SmallBarChart from '../BarCharts/SmallBarChart'
 import CardsContainer from '../CardsContainer/CardsContainer'
 import ChartBasic from '../ChartBasic/ChartBasic'
 import TabsSector from '../TabsSector/TabsSector'
@@ -14,6 +15,11 @@ function Dashboard() {
            <div className="chartsLayout">
             <ChartBasic />
             <BarCharts />
+            <SmallBarChart />
+            <SmallBarChart />
+            <SmallBarChart />
+            <SmallBarChart />
+            
            </div>
             <CardsContainer />
         </div>
