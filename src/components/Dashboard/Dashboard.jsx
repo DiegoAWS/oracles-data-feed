@@ -3,6 +3,7 @@ import BarCharts from '../BarCharts/BarCharts'
 import SmallBarChart from '../BarCharts/SmallBarChart'
 import CardsContainer from '../CardsContainer/CardsContainer'
 import ChartBasic from '../ChartBasic/ChartBasic'
+import ExchangeSelector from '../ExchangeSelector/ExchangeSelector'
 import TabsSector from '../TabsSector/TabsSector'
 import './Dashboard.scss'
 
@@ -11,6 +12,7 @@ function Dashboard() {
         <div className='dashboardWrapper'>
              <div className='tabsContainer'>
             <TabsSector />
+            <ExchangeSelector />
             </div>
            <div className="chartsLayout">
             <ChartBasic />

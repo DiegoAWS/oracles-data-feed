@@ -12,6 +12,7 @@ function App() {
 
       <div className='bodySection'>
         <Dashboard />
+      
       </div>
     </div>
   );
