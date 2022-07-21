@@ -1,0 +1,1317 @@
+[
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 13.685644090804601
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 86.77556181282334
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 54.13866620093997
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 65.18729965287437
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 9.646074796434
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 59.6258375331125
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 26.19159534039716
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 95.21367065978082
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 14.209704434276029
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 16.801490027245727
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T00:00:00Z",
+      "value": 708.6227059328488
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 514.650584839217
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 14.610291852249057
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 12.057911547032978
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 88.39210423590193
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 9.275505296998
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 54.500017905221625
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 41.61911404369259
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 11.56914251467408
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 22.494090606912014
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 83.27269558007099
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T01:00:00Z",
+      "value": 44.0673924055935
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 82.36768718698393
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 458.7283165679953
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 36.206540654475305
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 41.58043706760504
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 10.324181791219331
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 8.321003503601078
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 3.77575668688
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 36.8463362003365
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 16.586449512221765
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 8.644624891781218
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T02:00:00Z",
+      "value": 76.97317921068304
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 5.723822086106
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 11.62459442766605
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 35.84149316015855
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 78.7957212097538
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 416.8642090212809
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 34.8946659096225
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 10.75426157448019
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 84.51710166932389
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 42.91795757884787
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 16.780606262083214
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T03:00:00Z",
+      "value": 8.895667796216118
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 36.6504923940911
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 73.98135649989693
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 8.61244575293998
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 9.588040211868579
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 19.02518938958612
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 9.19546301836977
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 82.96752934462286
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 3.499932137104
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 350.6538117291616
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 27.1789426976375
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T04:00:00Z",
+      "value": 34.343611794201706
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 326.5955217704338
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 34.282775369849794
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 9.115854798484872
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 4.853327418686
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 70.62699889314551
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 30.27537744409656
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 85.25098465325432
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 30.9015983925255
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 9.248582528289054
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 18.905992784601462
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T05:00:00Z",
+      "value": 9.634609019117477
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 19.73228275526399
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 3.775661466464
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 74.38572492762125
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 11.389690563917643
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 386.91758500637025
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 32.0392430445135
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 7.930213012043625
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 29.36540001130294
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 9.04514321924978
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 84.74487735467456
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T06:00:00Z",
+      "value": 32.83843603635736
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 18.73969345429262
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 15.24245995764018
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 85.61839561454009
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 46.912853007214
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 83.0917921359482
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 7.568624740604
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 49.727496551795056
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 44.12792404567537
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 10.266757487720952
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 573.6526414250096
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T07:00:00Z",
+      "value": 8.250623138766931
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 83.29194213258812
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 21.36589990681374
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 811.5150638344311
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 16.58403086837228
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 11.116064280304546
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 55.33311767713123
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 45.2678165016635
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 103.55051271932317
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 42.52882762385793
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 12.642622385262664
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T08:00:00Z",
+      "value": 10.279730473946
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 510.45883402785745
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 8.673923522563044
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 34.34263255162217
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 10.841822398827677
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 36.8194822053445
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 17.248924252146978
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 11.320289365657436
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 82.60465550972943
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 84.32850425702763
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 7.870398246924
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T09:00:00Z",
+      "value": 45.08957669139695
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 908.9548602801157
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 67.4019510471501
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 57.53851409276108
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 96.03409302874189
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 85.51493535459555
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 19.037768633730316
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 27.436200501642965
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 55.237366415486
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 12.335462549746
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 14.353716271833086
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T10:00:00Z",
+      "value": 13.221289319221526
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 4.917814798468
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 87.4302270083358
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 43.2325667169195
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 20.61608215896619
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 15.661724626097499
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 84.520873748077
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 9.968343936512705
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 6.748787316235763
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 495.009505584565
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 43.062482132809684
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T11:00:00Z",
+      "value": 11.798068455930766
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 50.35987692949242
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 9.112609906539305
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 84.14168973555533
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 19.250608166817607
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 47.133296102121
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 486.2909111677407
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 14.909147372408604
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 10.34690885444668
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 85.50340107961358
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T12:00:00Z",
+      "value": 7.775522697054
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 62.47725544557605
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 102.03736598218933
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 657.4923412746635
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 22.301137410848145
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 85.59858953545672
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 48.764001507241
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 10.639335858472942
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 9.913788177678871
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 6.624562193996
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 11.017334884094716
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T13:00:00Z",
+      "value": 15.636830644221613
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 6.818516994378
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 750.4714788872085
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 10.866031232655171
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 59.30978912972277
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 15.759107904662242
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 22.771610711136063
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 90.4550919674901
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 35.9164839445175
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 11.2763069139782
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 100.34671813521206
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T14:00:00Z",
+      "value": 44.573430046408404
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 8.180890079588425
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 4.86187273258
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 39.57087078089185
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 10.747248037069989
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 34.188210711169
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 17.552648416848
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 35.8192225976894
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 83.20425062956478
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 802.5416372059071
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 8.122294127173447
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T15:00:00Z",
+      "value": 85.85704932488608
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 14.029347416048
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 144.70245902943972
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 20.14070886053324
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 13.610293887195436
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 61.81724640756725
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 64.155373167135
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 29.42821829311041
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 77.58545074733826
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 16.725681735628566
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 114.87631050931472
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T16:00:00Z",
+      "value": 1371.0398587153752
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 53.87570434991848
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 10.596881314417715
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 14.563299225237577
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 755.2919157548772
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 7.6978248313
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 43.710683705067865
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 11.203190402012563
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 42.240295333144
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 108.50822247283384
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 89.94952168880509
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T17:00:00Z",
+      "value": 21.886103890656
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 75.82677727879974
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 19.264382683627517
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 8.807577464415512
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 31.557651504837
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 5.163439494396
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 83.6184710127703
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 33.594031200320806
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 44.50867508294953
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 12.655736721578734
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 10.34052270369798
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T18:00:00Z",
+      "value": 520.7579816098743
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 42.008621655510396
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 31.228065613319
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 45.47386735616653
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 9.62361618120941
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 13.279118381100307
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 18.850150202502515
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 73.60666376175938
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 6.059943809094
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 81.52581679120892
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 538.0537349441137
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T19:00:00Z",
+      "value": 9.174738106191768
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 1952.7586098506538
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 21.104715656902567
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 76.07901172713375
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 115.87530507956637
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 17.525027161747
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 95.162258828095
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 135.5597766242828
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 23.59545554539046
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 27.662684653490448
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 32.08040105698388
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T20:00:00Z",
+      "value": 118.61569898817825
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 881.0973696271484
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 49.147350492306
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 13.858041676552284
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 10.602864591776
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 24.694790123992735
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 53.11282047781835
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 17.80408419080512
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 91.83122426407043
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 97.83286834448384
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 10.810755367877167
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T21:00:00Z",
+      "value": 58.67257931660851
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 14.096303743371179
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 9.54902801310754
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 8.371631579319308
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 18.104759142144
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 81.71899788709007
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 34.631600233198
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 47.05852946765523
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 40.18512372166961
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 362.362925782278
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 77.5431956765147
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T22:00:00Z",
+      "value": 6.413440663166
+    },
+    {
+      "network": "HECO Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 18.265187978814275
+    },
+    {
+      "network": "Ethereum Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 535.6860910848569
+    },
+    {
+      "network": "Fantom Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 10.49142024260447
+    },
+    {
+      "network": "Moonriver Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 12.40686569865105
+    },
+    {
+      "network": "Avalanche Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 60.41709401628845
+    },
+    {
+      "network": "Optimism Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 47.161874579395
+    },
+    {
+      "network": "Moonbeam Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 23.377814961041533
+    },
+    {
+      "network": "Polygon Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 88.18435751186075
+    },
+    {
+      "network": "Harmony Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 9.33582053375
+    },
+    {
+      "network": "Arbitrum Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 53.20836746931712
+    },
+    {
+      "network": "Binance Mainnet",
+      "time": "2022-07-20T23:00:00Z",
+      "value": 90.10258326993562
+    }
+  ]

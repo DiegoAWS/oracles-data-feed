@@ -17,7 +17,6 @@ function BarCharts() {
             barCategoryGap={12}
             margin={0}
         >
-
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="month" type="category" />
             <YAxis axisLine={false} type="number" />
