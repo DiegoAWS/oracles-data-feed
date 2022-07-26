@@ -2,6 +2,9 @@ import React, { createContext, useCallback, useContext, useState } from 'react';
 import exchangeList from '../data/exchanges_actives.json'
 // import useExchangeSuscription from '../hooks/useExchangeSuscription';
 import useGetPrices from '../hooks/useGetPrices';
+import { darkTheme, lightTheme } from './colorShemes';
+
+
 
 const MainContext = createContext();
 
@@ -10,12 +13,29 @@ function MainContextProvider({ ...props }) {
     const [exchange, setExchange] = useState(exchangeList[0])
     const [prices, setPrices] = useState({})
 
+    const [theme, setTheme] = useState(localStorage.getItem('themeColor') === 'dark'? darkTheme : lightTheme)
+
+   
+
+
+    const toggleTheme = useCallback(() => {
+        setTheme(oldValue => {
+
+            localStorage.setItem('themeColor', oldValue.isDarkMode ? 'dark' : 'light')
+
+            return oldValue.isDarkMode ? lightTheme : darkTheme
+        })
+    }, []);
+
     const obtainPrices = useCallback((data) => {
         setPrices(data)
     }, [])
 
-
     useGetPrices(exchange, obtainPrices)
+
+
+
+
 
 
     // const processFeed = useCallback((data) => {
@@ -35,11 +55,13 @@ function MainContextProvider({ ...props }) {
     // }, [prices])
 
     // const { closeConnection } = useExchangeSuscription(exchange, processFeed)
-    const { closeConnection } ={closeConnection:()=>{}}
+    const { closeConnection } = { closeConnection: () => { } }
 
     return (
         <MainContext.Provider
             value={{
+                theme,
+                toggleTheme,
                 exchangeList,
                 exchange,
                 prices,
