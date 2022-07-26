@@ -1,7 +1,6 @@
 import React from 'react'
 import BarCharts from '../BarCharts/BarCharts'
 import SmallBarChart from '../BarCharts/SmallBarChart'
-import CardsContainer from '../CardsContainer/CardsContainer'
 import ChartBasic from '../ChartBasic/ChartBasic'
 import ExchangeSelector from '../ExchangeSelector/ExchangeSelector'
 import TabsSector from '../TabsSector/TabsSector'
@@ -23,7 +22,7 @@ function Dashboard() {
             <SmallBarChart />
             
            </div>
-            <CardsContainer />
+           
         </div>
     )
 }

@@ -13,9 +13,13 @@ function MainContextProvider({ ...props }) {
     const [exchange, setExchange] = useState(exchangeList[0])
     const [prices, setPrices] = useState({})
 
-    const [theme, setTheme] = useState(localStorage.getItem('themeColor') === 'dark'? darkTheme : lightTheme)
+    const [theme, setTheme] = useState(localStorage.getItem('themeColor') === 'dark' ? darkTheme : lightTheme)
+    const [searchBarOpen, setSearchBarOpen] = useState(false)
 
-   
+    const toggleSearchBar = useCallback(() => {
+        setSearchBarOpen(oldValue => !oldValue)
+    }, [])
+
 
 
     const toggleTheme = useCallback(() => {
@@ -62,6 +66,8 @@ function MainContextProvider({ ...props }) {
             value={{
                 theme,
                 toggleTheme,
+                searchBarOpen,
+                toggleSearchBar,
                 exchangeList,
                 exchange,
                 prices,

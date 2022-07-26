@@ -10,8 +10,13 @@ import LightModeIcon from './assets/sun-solid.svg'
 import SearchIcon from './assets/magnifying-glass-solid.svg'
 import SearchIconLight from './assets/magnifying-glass-solid-light.svg'
 
+import SearchSideBar from './components/SearchSideBar/SearchSideBar';
+
 function App() {
-  const { theme, toggleTheme } = useMainContext()
+  const { theme, toggleTheme, searchBarOpen, toggleSearchBar } = useMainContext()
+
+
+
   return (
     <div className="App" style={{
       "--backgroundPure": theme.backgroundPure,
@@ -29,7 +34,7 @@ function App() {
           <div className='box'>
             <img src={theme.isDarkMode ? OptaktLogo : OptaktLogoLight} alt='OptaktLogo' className='logoOptakt' />
           </div>
-          <div className='box'>
+          <div className='box' onClick={toggleSearchBar}>
             <img src={theme.isDarkMode ? SearchIcon : SearchIconLight} alt='SearchIcon' className='searchIcon' />
           </div>
         </div>
@@ -46,6 +51,8 @@ function App() {
       <div className='bodySection'>
         <Dashboard />
       </div>
+
+      {searchBarOpen && <SearchSideBar />}
     </div>
   );
 }
