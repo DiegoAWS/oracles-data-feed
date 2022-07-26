@@ -1,13 +1,5 @@
 .dashboardWrapper{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 0 auto;
-   flex-wrap: wrap;
-   justify-content: center;
-   min-height: 100vh;
-   width: 100%;
-   max-width: 1000px;
+   padding: 30px;
 
    .chartsLayout{
       display: flex;

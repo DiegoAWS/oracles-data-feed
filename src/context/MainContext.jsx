@@ -4,7 +4,7 @@ import exchangeList from '../data/exchanges_actives.json'
 import useGetPrices from '../hooks/useGetPrices';
 import { darkTheme, lightTheme } from './colorShemes';
 
-
+const defaultTheme = localStorage.getItem('themeColor') === 'dark' ? darkTheme : lightTheme
 
 const MainContext = createContext();
 
@@ -13,7 +13,9 @@ function MainContextProvider({ ...props }) {
     const [exchange, setExchange] = useState(exchangeList[0])
     const [prices, setPrices] = useState({})
 
-    const [theme, setTheme] = useState(localStorage.getItem('themeColor') === 'dark' ? darkTheme : lightTheme)
+
+
+    const [theme, setTheme] = useState(defaultTheme)
     const [searchBarOpen, setSearchBarOpen] = useState(false)
 
     const toggleSearchBar = useCallback(() => {
@@ -21,11 +23,16 @@ function MainContextProvider({ ...props }) {
     }, [])
 
 
+    console.log({ defaultTheme, isDarkMode: defaultTheme.isDarkMode })
 
     const toggleTheme = useCallback(() => {
         setTheme(oldValue => {
 
-            localStorage.setItem('themeColor', oldValue.isDarkMode ? 'dark' : 'light')
+            const newValue = oldValue.isDarkMode ? 'light' : 'dark'
+
+            console.log({ newValue })
+
+            localStorage.setItem('themeColor', newValue)
 
             return oldValue.isDarkMode ? lightTheme : darkTheme
         })
