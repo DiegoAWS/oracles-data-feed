@@ -1,0 +1,57 @@
+.App {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  
+    .sidebarSection {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 100vh;
+      width: 100px;
+      background-color: var(--backgroundPure);
+      color: var(--primary);
+      box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  
+      .box {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+  
+        &:hover,
+        &.searchBarOpen {
+          background-color: var(--background);
+        }
+      }
+  
+      .searchText {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+  
+      .toggleDarkMode,
+      .searchIcon {
+        background-color: transparent;
+        width: 25%;
+      }
+  
+      .logoOptakt {
+        width: 50%;
+      }
+    }
+  
+  
+    .bodySection {
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      max-width: calc(100vw - 100px);
+      width: calc(100vw - 100px);
+    }
+  }
