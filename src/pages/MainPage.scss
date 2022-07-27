@@ -17,7 +17,7 @@
         min-width: var(--sidebar-width);
         background-color: var(--backgroundPure);
         color: var(--primary);
-        box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        border-right: 1px solid var(--primary);
 
         .box {
             height: var(--sidebar-width);
@@ -53,7 +53,10 @@
 
 
     .bodySection {
-        
+        min-width: calc(100vw - var(--sidebar-width));
+        width: calc(100vw - var(--sidebar-width));
+        min-height: 100vh;
         overflow-y: auto;
+        background-color: var(--backgroundPure)
     }
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import './MainPage.scss'
 
 import { useMainContext } from '../context/MainContext';
-import Dashboard from '../components/Dashboard/Dashboard';
 
 import OptaktLogo from '../assets/optakt-icon.svg';
 import OptaktLogoLight from '../assets/optakt-icon-light.svg';
@@ -12,8 +11,8 @@ import SearchIcon from '../assets/magnifying-glass-solid.svg'
 import SearchIconLight from '../assets/magnifying-glass-solid-light.svg'
 import AddchartIcon from '@mui/icons-material/Addchart';
 import SearchSideBar from '../components/SearchSideBar/SearchSideBar';
-import { Link, Route, Routes } from 'react-router-dom';
-import RatePage from './RatePage';
+import { Link} from 'react-router-dom';
+import MainRouter from './MainRouter';
 
 function MainPage() {
   const { theme, toggleTheme, searchBarOpen, toggleSearchBar } = useMainContext()
@@ -23,11 +22,7 @@ function MainPage() {
       "--backgroundPure": theme.backgroundPure,
       "--background": theme.background,
       "--primary": theme.primary,
-      "--secondary": theme.secondary,
-      "--oposite-backgroundPure": theme.oposite.backgroundPure,
-      "--oposite-background": theme.oposite.background,
-      "--oposite-primary": theme.oposite.primary,
-      "--oposite-secondary": theme.oposite.secondary
+      "--secondary": theme.secondary
     }}>
 
       <div className='sidebarSection'>
@@ -54,12 +49,7 @@ function MainPage() {
       </div>
 
       <div className='bodySection'>
-
-
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/currency/:base/:quote" element={<RatePage />} />
-        </Routes>
+        <MainRouter />
       </div>
 
       {searchBarOpen && <SearchSideBar />}

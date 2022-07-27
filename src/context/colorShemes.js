@@ -3,12 +3,6 @@ export const lightTheme = {
     background: '#efefef',
     primary: '#000000',
     secondary: '#666666',
-    oposite: {
-        backgroundPure: '#000000',
-        background: '#212121',
-        primary: '#ffffff',
-        secondary: '#b3b3b3'
-    },
     isDarkMode: false
 }
 
@@ -17,11 +11,5 @@ export const darkTheme = {
     background: '#212121',
     primary: '#ffffff',
     secondary: '#b3b3b3',
-    oposite: {
-        backgroundPure: '#ffffff',
-        background: '#efefef',
-        primary: '#000000',
-        secondary: '#666666'
-    },
     isDarkMode: true
 }

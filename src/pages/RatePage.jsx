@@ -1,6 +1,5 @@
-import { Tooltip } from '@mui/material'
 import React from 'react'
-import { CartesianGrid, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from 'recharts'
+import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import ExchangeSelector from '../components/ExchangeSelector/ExchangeSelector'
 import TabsSector from '../components/TabsSector/TabsSector'
 import './RatePage.scss'
