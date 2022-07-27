@@ -23,8 +23,6 @@ function MainContextProvider({ ...props }) {
     }, [])
 
 
-    console.log({ defaultTheme, isDarkMode: defaultTheme.isDarkMode })
-
     const toggleTheme = useCallback(() => {
         setTheme(oldValue => {
 

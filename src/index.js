@@ -7,7 +7,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 
 
@@ -15,9 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <MainContextProvider>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-      </Routes>
+   <MainPage />
     </MainContextProvider>
   </BrowserRouter>
 );

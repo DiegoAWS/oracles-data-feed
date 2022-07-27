@@ -18,12 +18,12 @@
         padding: 20px;
         overflow-y: auto;
 
-        .searchSideBarContent{
+        .searchSideBarContent {
             display: flex;
             flex-direction: column;
         }
 
-        .centerProgress{
+        .centerProgress {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,7 +33,13 @@
             opacity: 0.5;
         }
 
-        .currencyCardItem{
+        .noLink {
+            color: inherit;
+            text-decoration: inherit;
+            cursor: inherit;
+        }
+
+        .currencyCardItem {
             width: 380px;
             padding-top: 0;
             padding-bottom: 0;
@@ -41,15 +47,18 @@
             flex-direction: row;
             display: flex;
             justify-content: space-between;
+            cursor: pointer;
 
-            .logoCurrency{
+            .logoCurrency {
                 width: 30px;
                 height: 30px;
             }
-            .cardBottomRowLeft{
-                display:none;
+
+            .cardBottomRowLeft {
+                display: none;
             }
-            .currencyNames{
+
+            .currencyNames {
                 margin-left: 10px;
             }
         }

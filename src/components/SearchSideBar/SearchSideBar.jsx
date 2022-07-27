@@ -4,6 +4,7 @@
 // import { Box } from '@mui/system'
 import { CircularProgress } from '@mui/material';
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { getPricesList } from '../../adapters/processPrices';
 import { useMainContext } from '../../context/MainContext'
 import CurrencyCardItem from '../CardsContainer/CurrencyCardItem/CurrencyCardItem';
@@ -29,7 +30,9 @@ function SearchSideBar() {
                         <div className='centerProgress'><CircularProgress /></div>
                         : list.map((element, i) => (
                             <div key={i}>
-                                <CurrencyCardItem element={element} />
+                                <Link className='noLink' to={`/currency/${element?.base?.toUpperCase()}/${element?.quote?.toUpperCase()}`} onClick={toggleSearchBar}>
+                                    <CurrencyCardItem element={element} />
+                                </Link>
                             </div>))}
 
                 </div>
