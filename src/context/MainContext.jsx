@@ -1,3 +1,4 @@
+import { createTheme, ThemeProvider } from '@mui/material';
 import React, { createContext, useCallback, useContext, useState } from 'react';
 import exchangeList from '../data/exchanges_actives.json'
 // import useExchangeSuscription from '../hooks/useExchangeSuscription';
@@ -28,8 +29,6 @@ function MainContextProvider({ ...props }) {
 
             const newValue = oldValue.isDarkMode ? 'light' : 'dark'
 
-            console.log({ newValue })
-
             localStorage.setItem('themeColor', newValue)
 
             return oldValue.isDarkMode ? lightTheme : darkTheme
@@ -43,7 +42,11 @@ function MainContextProvider({ ...props }) {
     useGetPrices(exchange, obtainPrices)
 
 
-
+    const materialTheme = createTheme({
+        palette: {
+            mode: theme.isDarkMode ? 'dark' : 'light',
+        },
+    });
 
 
 
@@ -67,20 +70,22 @@ function MainContextProvider({ ...props }) {
     const { closeConnection } = { closeConnection: () => { } }
 
     return (
-        <MainContext.Provider
-            value={{
-                theme,
-                toggleTheme,
-                searchBarOpen,
-                toggleSearchBar,
-                exchangeList,
-                exchange,
-                prices,
-                setExchange,
-                closeConnection,
-            }}
-            {...props}
-        />
+        <ThemeProvider theme={materialTheme}>
+            <MainContext.Provider
+                value={{
+                    theme,
+                    toggleTheme,
+                    searchBarOpen,
+                    toggleSearchBar,
+                    exchangeList,
+                    exchange,
+                    prices,
+                    setExchange,
+                    closeConnection,
+                }}
+                {...props}
+            />
+        </ThemeProvider>
     );
 }
 
