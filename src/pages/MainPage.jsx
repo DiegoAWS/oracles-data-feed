@@ -11,7 +11,7 @@ import SearchIcon from '../assets/magnifying-glass-solid.svg'
 import SearchIconLight from '../assets/magnifying-glass-solid-light.svg'
 import AddchartIcon from '@mui/icons-material/Addchart';
 import SearchSideBar from '../components/SearchSideBar/SearchSideBar';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import MainRouter from './MainRouter';
 
 function MainPage() {
@@ -29,17 +29,16 @@ function MainPage() {
         <div className='upperSection'>
 
           <Link to="/">
-            <div className='box' >
+            <div className='box' title='Home' >
               <AddchartIcon htmlColor={theme.primary} fontSize="large" />
             </div>
           </Link>
-          <div className={`box ${searchBarOpen ? 'searchBarOpen' : ''}`} onClick={toggleSearchBar}>
+          <div className={`box ${searchBarOpen ? 'searchBarOpen' : ''}`} title="Search" onClick={toggleSearchBar}>
             <img src={theme.isDarkMode ? SearchIcon : SearchIconLight} alt='SearchIcon' className='searchIcon' />
-            <div className='searchText'>SEARCH</div>
           </div>
         </div>
         <div className='lowerSection'>
-          <div className='box' onClick={toggleTheme}>
+          <div className='box' onClick={toggleTheme} title={theme.isDarkMode ? "Light Mode" : "Dark Mode"}>
             <img src={theme.isDarkMode ? LightModeIcon : DarkModeIcon} alt='ToggleDarkMode' className='toggleDarkMode' />
           </div>
           <a className='box' href='https://www.optakt.io/' title='Optakt Labs'>

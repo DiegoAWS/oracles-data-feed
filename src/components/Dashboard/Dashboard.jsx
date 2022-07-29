@@ -9,20 +9,25 @@ import './Dashboard.scss'
 function Dashboard() {
     return (
         <div className='dashboardWrapper'>
-             <div className='tabsContainer'>
-            <TabsSector />
-            <ExchangeSelector />
+            <div>
+                <div className="title">
+                    <h1>Dashboard</h1>
+                </div>
             </div>
-           <div className="chartsLayout">
-            <ChartBasic />
-            <BarCharts />
-            <SmallBarChart />
-            <SmallBarChart />
-            <SmallBarChart />
-            <SmallBarChart />
-            
-           </div>
-           
+            <div className='tabsContainer'>
+                <TabsSector />
+                <ExchangeSelector />
+            </div>
+            <div className="chartsLayout">
+                <ChartBasic />
+                <BarCharts />
+                <SmallBarChart />
+                <SmallBarChart />
+                <SmallBarChart />
+                <SmallBarChart />
+
+            </div>
+
         </div>
     )
 }
