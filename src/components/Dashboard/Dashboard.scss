@@ -1,21 +1,29 @@
-.dashboardWrapper{
+.dashboardWrapper {
    padding: 30px;
 
-   .title{
+   .title {
       font-size: 20px;
       font-weight: bold;
    }
-   .chartsLayout{
+
+   .chartsLayout {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
+      .row {
+         margin-bottom: 100px;
+         width: 100%;
+         display: flex;
+         height: 300px;
+      }
    }
 
-   .tabsContainer{
+   .tabsContainer {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 10px;
       width: 95%;
-  }
+   }
 }

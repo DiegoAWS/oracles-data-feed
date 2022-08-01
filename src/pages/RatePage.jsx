@@ -7,6 +7,11 @@ import './RatePage.scss'
 import data from '../data/data.json'
 
 function RatePage() {
+
+    const onUpdateBrush = (e) => {
+        console.log(e)
+    }
+
     return (
         <div className='ratePageWrapper'>
             <div className='tabsContainer'>
@@ -30,7 +35,7 @@ function RatePage() {
                         <XAxis dataKey="name" />
                         <YAxis />
                         <Tooltip />
-                        <Brush />
+                        <Brush  onChange={onUpdateBrush}/>
                         <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
                         <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
                         <Line type="natural" dataKey="amt" stroke="red" />

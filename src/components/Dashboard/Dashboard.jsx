@@ -19,13 +19,16 @@ function Dashboard() {
                 <ExchangeSelector />
             </div>
             <div className="chartsLayout">
-                <ChartBasic />
-                <BarCharts />
-                <SmallBarChart />
-                <SmallBarChart />
-                <SmallBarChart />
-                <SmallBarChart />
-
+                <div className='row'>
+                    <ChartBasic />
+                    <BarCharts />
+                </div>
+                <div className='row'>
+                    <SmallBarChart />
+                    <SmallBarChart />
+                    <SmallBarChart />
+                    <SmallBarChart />
+                </div>
             </div>
 
         </div>
