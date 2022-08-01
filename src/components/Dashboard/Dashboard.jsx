@@ -1,7 +1,8 @@
 import React from 'react'
-import BarCharts from '../BarCharts/BarCharts'
-import SmallBarChart from '../BarCharts/SmallBarChart'
-import ChartBasic from '../ChartBasic/ChartBasic'
+import AmChartZoom from '../AmChartZoom/AmChartZoom'
+// import BarCharts from '../BarCharts/BarCharts'
+// import SmallBarChart from '../BarCharts/SmallBarChart'
+// import ChartBasic from '../ChartBasic/ChartBasic'
 import ExchangeSelector from '../ExchangeSelector/ExchangeSelector'
 import TabsSector from '../TabsSector/TabsSector'
 import './Dashboard.scss'
@@ -19,7 +20,7 @@ function Dashboard() {
                 <ExchangeSelector />
             </div>
             <div className="chartsLayout">
-                <div className='row'>
+                {/* <div className='row'>
                     <ChartBasic />
                     <BarCharts />
                 </div>
@@ -28,6 +29,9 @@ function Dashboard() {
                     <SmallBarChart />
                     <SmallBarChart />
                     <SmallBarChart />
+                </div> */}
+                <div className='row'>
+                    <AmChartZoom />
                 </div>
             </div>
 
