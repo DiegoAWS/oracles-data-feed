@@ -20,18 +20,17 @@ function Dashboard() {
                 <ExchangeSelector />
             </div>
             <div className="chartsLayout">
-                {/* <div className='row'>
-                    <ChartBasic />
-                    <BarCharts />
-                </div>
-                <div className='row'>
-                    <SmallBarChart />
-                    <SmallBarChart />
-                    <SmallBarChart />
-                    <SmallBarChart />
-                </div> */}
+
                 <div className='row'>
                     <AmChartZoom />
+                </div>
+
+                <div className='row'>
+                    <AmChartZoom network="Moonbeam Mainnet"/>
+                    <AmChartZoom network="Optimism Mainnet"/>
+                    <AmChartZoom network="Fantom Mainnet"/>
+                    <AmChartZoom network="Moonriver Mainnet"/>
+
                 </div>
             </div>
 

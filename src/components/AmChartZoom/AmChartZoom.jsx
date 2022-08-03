@@ -1,15 +1,23 @@
-import React, { useLayoutEffect } from 'react'
+import React, { useLayoutEffect, useMemo } from 'react'
 import './AmChartZoom.scss'
 import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-// import data from '../../data/LINK_1m_rewards.json'
+import sourceData from '../../data/LINK_1m_rewards.json'
 
-function AmChartZoom() {
+
+
+function AmChartZoom({ network = "Harmony Mainnet" }) {
+    const updatedData = useMemo(() => sourceData
+        .filter(item => item.network === network)
+        .map(item => ({
+            date: new Date(item.time).getTime(),
+            value: item.value
+        })), [network])
 
     useLayoutEffect(() => {
 
-        let root = am5.Root.new("chartdiv");
+        let root = am5.Root.new(network);
 
         root.setThemes([
             am5themes_Animated.new(root)
@@ -26,7 +34,7 @@ function AmChartZoom() {
         // Create Y-axis
         var yAxis = chart.yAxes.push(
             am5xy.ValueAxis.new(root, {
-                renderer: am5xy.AxisRendererY.new(root, {})
+                renderer: am5xy.AxisRendererY.new(root, { })
             })
         );
 
@@ -45,27 +53,27 @@ function AmChartZoom() {
         xAxis.get("periodChangeDateFormats")["day"] = "MMMM";
 
         // Generate random data
-        var date = new Date(2000);
-        date.setHours(0, 0, 0, 0);
-        var value = 100;
+        // var date = new Date(2000);
+        // date.setHours(0, 0, 0, 0);
+        // var value = 100;
 
-        function generateData() {
-            value = Math.round((Math.random() * 10 - 5) + value);
-            am5.time.add(date, "day", 1);
-            return {
-                date: date.getTime(),
-                value: value
-            };
-        }
+        // function generateData() {
+        //     value = Math.round((Math.random() * 10 - 5) + value);
+        //     am5.time.add(date, "day", 1);
+        //     return {
+        //         date: date.getTime(),
+        //         value: value
+        //     };
+        // }
 
-        function generateDatas(count) {
-            var data = [];
-            for (var i = 0; i < count; ++i) {
-                data.push(generateData());
-            }
-            return data;
-        }
-        var data = generateDatas(50000);
+        // function generateDatas(count) {
+        //     var data = [];
+        //     for (var i = 0; i < count; ++i) {
+        //         data.push(generateData());
+        //     }
+        //     return data;
+        // }
+        var data = updatedData // generateDatas(50000);
 
         // Create series
         function createSeries(name, field) {
@@ -84,10 +92,10 @@ function AmChartZoom() {
 
             series.get("tooltip").label.set("text", "[bold]{name}[/]\n{valueX.formatDate()}: {valueY}")
             series.data.setAll(data);
-
+            console.log({ data })
             // Pre-zoom X axis
             series.events.once("datavalidated", function (ev, target) {
-                xAxis.zoomToDates(new Date(2022, 0, 1), new Date(2022, 7, 1))
+                xAxis.zoomToDates(new Date(2022, 6, 1), new Date(2022, 7, 1))
             })
         }
 
@@ -114,17 +122,13 @@ function AmChartZoom() {
         return () => {
             root.dispose();
         };
-    }, []);
+    }, [network, updatedData]);
 
     return (
 
-        <div id="chartdiv" className="amChartZoomContainer" style={{ width: "100%", height: "500px" }}></div>
+        <div id={network} className="amChartZoomContainer" style={{ width: "100%", height: "100%" }}></div>
 
     );
-
-    //   return (
-    //     <div className='amChartZoomContainer'></div>
-    //   )
 
 }
 
