@@ -1,5 +1,5 @@
 import React from 'react'
-import AmChartZoom from '../AmChartZoom/AmChartZoom'
+import ChartExplorer from '../ChartExplorer/ChartExplorer'
 // import BarCharts from '../BarCharts/BarCharts'
 // import SmallBarChart from '../BarCharts/SmallBarChart'
 // import ChartBasic from '../ChartBasic/ChartBasic'
@@ -22,16 +22,10 @@ function Dashboard() {
             <div className="chartsLayout">
 
                 <div className='row'>
-                    <AmChartZoom />
+                    <ChartExplorer />
                 </div>
 
-                <div className='row'>
-                    <AmChartZoom network="Moonbeam Mainnet"/>
-                    <AmChartZoom network="Optimism Mainnet"/>
-                    <AmChartZoom network="Fantom Mainnet"/>
-                    <AmChartZoom network="Moonriver Mainnet"/>
 
-                </div>
             </div>
 
         </div>

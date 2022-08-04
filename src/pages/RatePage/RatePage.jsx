@@ -1,10 +1,10 @@
 import React from 'react'
 import { Brush, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
-import ExchangeSelector from '../components/ExchangeSelector/ExchangeSelector'
-import TabsSector from '../components/TabsSector/TabsSector'
+import ExchangeSelector from '../../components/ExchangeSelector/ExchangeSelector'
+import TabsSector from '../../components/TabsSector/TabsSector'
 import './RatePage.scss'
 
-import data from '../data/data.json'
+import data from '../../data/data.json'
 
 function RatePage() {
 
