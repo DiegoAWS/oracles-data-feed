@@ -8,18 +8,20 @@ import SearchIcon from '../../assets/magnifying-glass-solid.svg'
 import SearchIconLight from '../../assets/magnifying-glass-solid-light.svg'
 import AddchartIcon from '@mui/icons-material/Addchart';
 import { useMainContext } from '../../context/MainContext';
+import './Sidebar.scss'
 
 function Sidebar() {
     const { theme, toggleTheme, searchBarOpen, toggleSearchBar } = useMainContext()
 
-
     return (
-        <div className='sidebarSection'>
+        <div className='sidebarSectionWrapper'>
             <div className='upperSection'>
-
-                <Link to="/">
+                <Link to="/" className='titleContainer'>
                     <div className='box' title='Home' >
                         <AddchartIcon htmlColor={theme.primary} fontSize="large" />
+                    </div>
+                    <div className="titleMobileSite">
+                        Oracles Feeds
                     </div>
                 </Link>
                 <div className={`box ${searchBarOpen ? 'searchBarOpen' : ''}`} title="Search" onClick={toggleSearchBar}>

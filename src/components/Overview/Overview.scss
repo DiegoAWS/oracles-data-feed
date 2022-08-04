@@ -1,0 +1,35 @@
+.overviewWrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  .titleSection {
+    border: 1px solid red;
+    margin-bottom: 50px;
+  }
+
+  .chartSections {
+    display: flex;
+    flex-direction: row;
+    .chartSection {
+      margin: 20px;
+      border-radius: 20px;
+      border: 1px solid var(--primary);
+      width: 100%;
+      height: 250px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .overviewWrapper {
+    .chartSections {
+      flex-direction: column;
+      &>.chartSection {
+        margin: 0px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

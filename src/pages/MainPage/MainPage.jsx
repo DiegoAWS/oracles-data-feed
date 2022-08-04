@@ -4,6 +4,7 @@ import { useMainContext } from '../../context/MainContext';
 import SearchSideBar from '../../components/SearchSideBar/SearchSideBar';
 import MainRouter from '../MainRouter';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import Footer from '../../components/Footer/Footer';
 
 function MainPage() {
   const { theme, searchBarOpen } = useMainContext()
@@ -21,6 +22,8 @@ function MainPage() {
       <div className='bodySection'>
         <MainRouter />
       </div>
+
+      <Footer />
 
       {searchBarOpen && <SearchSideBar />}
     </div >

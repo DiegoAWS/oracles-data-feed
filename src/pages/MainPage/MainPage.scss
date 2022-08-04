@@ -1,59 +1,28 @@
 :root {
-    --sidebar-width: 100px;
+  --sidebar-width: 100px;
 }
 
 .App {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  color: var(--primary);
 
-    .sidebarSection {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        height: 100vh;
-        width: var(--sidebar-width);
-        min-width: var(--sidebar-width);
-        background-color: var(--backgroundPure);
+  .bodySection {
+    min-width: calc(100vw - var(--sidebar-width));
+    width: calc(100vw - var(--sidebar-width));
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: var(--backgroundPure);
+  }
+}
 
-        border-right: 1px solid var(--primary);
-
-        .box {
-            height: var(--sidebar-width);
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            &:hover,
-            &.searchBarOpen {
-                background-color: var(--background);
-            }
-        }
-
-
-
-        .toggleDarkMode,
-        .searchIcon {
-            background-color: transparent;
-            width: 25%;
-        }
-
-        .logoOptakt {
-            width: 50%;
-        }
-    }
-
-
+@media only screen and (max-width: 1024px) {
+  .App {
+    flex-direction: column;
     .bodySection {
-        min-width: calc(100vw - var(--sidebar-width));
-        width: calc(100vw - var(--sidebar-width));
-        min-height: 100vh;
-        overflow-y: auto;
-        background-color: var(--backgroundPure)
+      min-width: 100vw;
+      width: 100vw;
     }
+  }
 }
