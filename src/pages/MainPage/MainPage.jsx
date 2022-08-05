@@ -14,16 +14,18 @@ function MainPage() {
       "--backgroundPure": theme.backgroundPure,
       "--background": theme.background,
       "--primary": theme.primary,
-      "--secondary": theme.secondary
+      "--secondary": theme.secondary,
+      "--highlight": theme.highlight,
     }}>
 
       <Sidebar />
 
       <div className='bodySection'>
         <MainRouter />
+        <Footer />
       </div>
 
-      <Footer />
+
 
       {searchBarOpen && <SearchSideBar />}
     </div >
