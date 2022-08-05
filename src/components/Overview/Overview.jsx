@@ -40,14 +40,14 @@ function Overview() {
         <GenericChart key={9} title="Active Feeds by Network" subTitle="5,381 Feeds" type="explorer" />
         </div>
       </div>
-      {/* <div className="chartSections">
+      <div className="chartSections">
         <div className="chartSection">
-
+        <GenericChart key={10} title="Active Feeds by Network" subTitle="5,381 Feeds" type="pie" />
         </div>
         <div className="chartSection">
-
+        <GenericChart key={11} title="Active Feeds by Network" subTitle="5,381 Feeds" type="pie" />
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
