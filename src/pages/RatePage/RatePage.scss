@@ -3,44 +3,7 @@
   background-color: var(--backgroundPure);
   color: var(--primary);
 
-  .titleSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    .currencyLogos {
-      display: flex;
-    }
-
-    .titlePair {
-      margin-left: 10px;
-      .pairText {
-        font-size: 2rem;
-        font-weight: bold;
-      }
-    }
-
-    .leftSection {
-      display: flex;
-      margin-bottom: 20px;
-    }
-
-    .rightSection{
-        display: flex;
-       
-
-        .infoBox{
-            margin-left: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
 
 
-            .infoBoxValue{
-                font-size: 1.2rem;
-                font-weight: bold;
-            }
-        }
-    }
-  }
+
 }
