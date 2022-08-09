@@ -14,6 +14,11 @@
     min-height: 100vh;
     overflow-y: auto;
     background-color: var(--backgroundPure);
+    display: flex;
+    flex-direction: column;
+    &>div:first-child{
+      flex: 1;
+    }
   }
 }
 
@@ -23,6 +28,7 @@
     .bodySection {
       min-width: 100vw;
       width: 100vw;
+      min-height: calc(100vh - var(--sidebar-width));
     }
   }
 }

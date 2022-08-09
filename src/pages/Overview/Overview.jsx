@@ -1,5 +1,5 @@
 import React from 'react'
-import GenericChart from '../GenericChart/GenericChart'
+import GenericChart from '../../components/GenericChart/GenericChart'
 import './Overview.scss'
 
 function Overview() {

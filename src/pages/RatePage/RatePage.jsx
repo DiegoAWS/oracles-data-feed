@@ -1,69 +1,54 @@
+import { Avatar, AvatarGroup } from '@mui/material';
 import React from 'react'
-import { Brush, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
-import ExchangeSelector from '../../components/ExchangeSelector/ExchangeSelector'
-import TabsSector from '../../components/TabsSector/TabsSector'
-import './RatePage.scss'
+import { useParams } from 'react-router-dom';
+import { getCurrencyLogoUrl } from '../../services/getCurrencyLogo'
 
-import data from '../../data/data.json'
+import './RatePage.scss'
 
 function RatePage() {
 
-    const onUpdateBrush = (e) => {
-        console.log(e)
-    }
+    const { base, quote } = useParams();
 
     return (
         <div className='ratePageWrapper'>
-            <div className='tabsContainer'>
-                <TabsSector />
-                <ExchangeSelector />
+            <div className='titleSection'>
+                <div className='leftSection'>
+                    <div className="currencyLogos">
+                        <AvatarGroup>
+                            <Avatar
+                                alt={base}
+                                src={getCurrencyLogoUrl(base)}
+                                sx={{ width: 56, height: 56 }}
+                            />
+                            <Avatar
+                                alt={quote}
+                                src={getCurrencyLogoUrl(quote)}
+                                sx={{ width: 56, height: 56 }}
+                            />
+                        </AvatarGroup>
+                    </div>
+                    <div className="titlePair">
+                        <div>Pair</div>
+                        <div className='pairText'>{base} / {quote}</div>
+                    </div>
+                </div>
+                <div className="rightSection">
+                <div className="infoBox">
+                        <div className="infoBoxTitle">Latest Answer</div>
+                        <div className="infoBoxValue">0.06224928 ETH</div>
+                    </div>
+                    <div className="infoBox">
+                        <div className="infoBoxTitle">24h Change</div>
+                        <div className="infoBoxValue">0.00 %</div>
+                    </div>
+                    <div className="infoBox">
+                        <div className="infoBoxTitle">24h Rewards</div>
+                        <div className="infoBoxValue">14.64 LINK</div>
+                    </div>
+                </div>
+
             </div>
-            <div className="chartsLayout">
-                <ResponsiveContainer width="100%" height="100%">
-                    <LineChart
-                        width={500}
-                        height={300}
-                        data={data}
-                        margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 25,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Brush  onChange={onUpdateBrush}/>
-                        <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-                        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-                        <Line type="natural" dataKey="amt" stroke="red" />
-                    </LineChart>
-                </ResponsiveContainer>
-                <ResponsiveContainer width="100%" height="100%">
-                    <LineChart
-                        width={500}
-                        height={300}
-                        data={data}
-                        margin={{
-                            top: 25,
-                            right: 30,
-                            left: 20,
-                            bottom: 25,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Brush />
-                        <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-                        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-                        <Line type="natural" dataKey="amt" stroke="red" />
-                    </LineChart>
-                </ResponsiveContainer>
-            </div>
+            
         </div>
     )
 }

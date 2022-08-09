@@ -2,7 +2,7 @@
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import RatePage from './RatePage/RatePage'
-import Overview from '../components/Overview/Overview'
+import Overview from './Overview/Overview'
 
 function MainRouter() {
     return (   

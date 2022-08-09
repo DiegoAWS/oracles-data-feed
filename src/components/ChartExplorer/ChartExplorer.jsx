@@ -1,5 +1,5 @@
 import { EventTracker } from '@devexpress/dx-react-chart';
-import { Chart, SplineSeries, Tooltip, ZoomAndPan } from '@devexpress/dx-react-chart-material-ui'
+import { Chart, SplineSeries, Title, Tooltip, ZoomAndPan } from '@devexpress/dx-react-chart-material-ui'
 
 import React, { useState } from 'react'
 import { useMainContext } from '../../context/MainContext';
@@ -15,6 +15,10 @@ import './ChartExplorer.scss'
     return ret;
   };
   const data = generateData(100);
+
+
+
+
 function ChartExplorer() {
 
   const { theme } = useMainContext()
@@ -25,12 +29,12 @@ function ChartExplorer() {
   return (
 
     <Chart data={data} height={250}>
-      {/* <Title textComponent={() => (
+      <Title textComponent={() => (
           <div>
-            <span>Feed Updates</span>
-            <span>{viewPort.argumentStart} - {viewPort.argumentEnd}</span>
+            {/* <span>Feed Updates</span>
+            <span>{viewPort.argumentStart} - {viewPort.argumentEnd}</span> */}
           </div>
-        )} position='top' /> */}
+        )} position='top' />
 
       <SplineSeries name='Responses' color={theme?.higtlight} valueField="y" argumentField="x" />
       <ZoomAndPan viewport={viewPort} onViewportChange={setViewPort} />
