@@ -9,8 +9,8 @@
   color: var(--primary);
 
   .bodySection {
-    min-width: calc(100vw - var(--sidebar-width));
-    width: calc(100vw - var(--sidebar-width));
+    // min-width: calc(100vw - var(--sidebar-width));
+    // width: calc(100vw - var(--sidebar-width));
     min-height: 100vh;
     overflow-y: auto;
     background-color: var(--backgroundPure);

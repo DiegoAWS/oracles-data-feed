@@ -3,7 +3,9 @@
   background-color: var(--backgroundPure);
   color: var(--primary);
 
-
-
-
+  .chartWraper{
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding-top: 20px;
+  }
 }
